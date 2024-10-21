@@ -28,7 +28,7 @@ chmod +x */*.sh
 #Função que instala as aplicações 
 function installs() {
 
-    # Loop para execultar scripts contidos installs/ e validar suas saidas
+    # Loop para execultar scripts contidos em installs/ e validar suas saidas
     DIR = $(ls installs/)
     for in f in $DIR; do
 
@@ -47,7 +47,7 @@ function installs() {
 
 function apps(){
 
-    # Loop para execultar scripts contidos apps/ e validar suas saidas
+    # Loop para execultar scripts contidos em apps/ e validar suas saidas
     # -r para instalar o postgres primeiro
     DIR = $(ls -r apps/)
     for in f in $DIR; do
