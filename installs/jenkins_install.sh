@@ -13,7 +13,7 @@ CONFIGS=""
 JDK_VERSION="21"
 
 #Define a porta do Jenkins
-JENKINS_PORT=${1:-8090}
+JENKINS_PORT=${1:-8888}
 
 function install() {
 
