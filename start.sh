@@ -1,10 +1,15 @@
 #!/bin/bash
 
+#   Adicione permissão de execução a este script com chmod +x start.sh
+#   Execute esse script com root ou usando sudo
 
-# Verifica se os programas estão instalados e os instala
+# Adiciona permissão de execulsão a todos os outros scripts
+chmod +x */*.sh
 
-if systemctl status jenkins >/dev/null 2>&1; then
-    echo "Instalado"
-else
-    echo "Não instalado"
-fi
+function installs(){
+
+}
+
+function apps(){
+    
+}
