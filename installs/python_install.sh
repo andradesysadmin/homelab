@@ -18,6 +18,15 @@ function install() {
     eval $INSTALL_CMD
 }
 
+#Verifica se o python ja esta instalado
+
+if command -v python3 --version > /dev/null; then
+
+    echo "Pyhton já está instalado"
+    exit 0;
+
+fi
+
 if command -v apt >/dev/null; then
 
     PACKAGE_MANAGER="apt"

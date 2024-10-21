@@ -6,7 +6,7 @@
 # Adiciona permissão de execulsão a todos os outros scripts
 
 if [ "$(id -u)" -ne 0 ]; then
-    echo "Este script precisa ser executado como root."
+    echo "Este script precisa ser executado como root"
     exit 1
 fi
 
@@ -15,12 +15,21 @@ chmod +x */*.sh
 
 function installs(){
 
+    sudo /installs/docker_install.sh
+    sudo /installs/python_install.sh
+    sudo /installs/jenkins_install.sh
+
 }
 
 function apps(){
 
 }
 
+function automation(){
+
+}
+
 # Chama as funções
 installs
 apps
+automation

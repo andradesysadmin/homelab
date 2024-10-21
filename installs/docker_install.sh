@@ -19,6 +19,15 @@ function install(){
     sudo usermod -aG docker $USER
 }
 
+#Verifica se o docker ja esta instalado
+
+if command -v docker --version > /dev/null; then
+
+    echo "Docker já está instalado"
+    exit 0;
+
+fi
+
 if command -v apt >/dev/null; then
 
     PACKAGE_MANAGER="apt"
